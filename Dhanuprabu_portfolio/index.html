@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dhanuprabu J – IT Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-avatar"><img src="assets/profile.jpg" alt="Dhanuprabu"/></div>
+  <div class="nav-info"><span class="nav-name">@dhanuprabu</span><span class="nav-role">IT Developer</span></div>
+  <div class="nav-links">
+    <a class="nav-link active" onclick="goTo('home')"><i class="fas fa-user-circle"></i> Home</a>
+    <a class="nav-link" onclick="goTo('about')"><i class="fas fa-address-card"></i> About</a>
+    <a class="nav-link" onclick="goTo('education')"><i class="fas fa-graduation-cap"></i> Education</a>
+    <a class="nav-link" onclick="goTo('projects')"><i class="fas fa-folder-open"></i> Projects</a>
+    <a class="nav-link" onclick="goTo('services')"><i class="fas fa-code"></i> services</a>
+    <a class="nav-link" onclick="goTo('contact')"><i class="fas fa-envelope"></i> Contact</a>
+  </div>
+</nav>
+
+<section id="home">
+  <video class="hero-video-bg" id="heroBgVideo" autoplay muted loop playsinline preload="auto">
+    <source src="assets/hero-video.mp4" type="video/mp4">
+  </video>
+  <div class="hero-bg-overlay"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text-col">
+        <div class="hero-avail"><span class="dot"></span> Available for entry-level IT roles</div>
+        <h1 class="hero-title">Hi, I'm Dhanuprabu J</h1>
+        <div class="hero-role">B.Tech IT Undergraduate &amp; Developer</div>
+        <p class="hero-desc">Motivated and detail-oriented Information Technology undergraduate with a strong foundation in Java Full Stack Development, frontend technologies, databases, and software engineering concepts. Passionate about developing AI-powered applications and modern web solutions.</p>
+        <div class="hero-meta">
+          <span><i class="fas fa-map-marker-alt"></i> Perambalur, Tamil Nadu</span>
+          <span><i class="fas fa-university"></i> Mahendra College of Engineering</span>
+          <span><i class="fas fa-star"></i> 7.72 CGPA</span>
+        </div>
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="goTo('contact')"><i class="fas fa-arrow-right"></i> Hire Me</button>
+          <a class="btn-outline" id="downloadCvBtn" href="assets/Dhanuprabu_J_Resume.pdf" download="Dhanuprabu_J_Resume.pdf"><i class="fas fa-download"></i> Download CV</a>
+        </div>
+        <hr class="hero-divider"/>
+        <div class="hero-social">
+          <span>Find me:</span>
+          <a class="social-icon" href="https://github.com/dhanuprabu" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="social-icon" href="https://www.linkedin.com/in/dhanuprabu-j-a182602a6" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-icon" href="mailto:dhanuprabuj@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a class="social-icon" href="tel:+919361032426"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="video-card">
+          <video autoplay muted loop playsinline preload="auto" id="heroCardVideo">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+          </video>
+          <div class="video-card-controls">
+            <div class="vc-btn" id="vcPlayPause" onclick="toggleHeroCardVideo()"><i class="fas fa-pause"></i></div>
+            <div class="vc-btn" onclick="toggleHeroCardMute()" id="vcMute"><i class="fas fa-volume-mute"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="about-grid reveal">
+      <div>
+        <div class="section-heading">About Me</div>
+        <div class="about-text">
+          <p>Hi! I'm <strong style="color:var(--text);">Dhanuprabu J</strong>, a passionate B.Tech Information Technology undergraduate from <strong style="color:var(--text);">Mahendra College of Engineering, Salem</strong> — currently maintaining a <strong style="color:var(--text);">7.72 CGPA</strong>.</p>
+          <p>I have a strong interest in AI, machine learning, cybersecurity, and full-stack web development. Known for effective communication and teamwork, I bring ideas to life through clean code and thoughtful design.</p>
+          <p>Currently working with: <span class="hash">#Python</span> · <span class="hash">#Java Full Stack</span> · <span class="hash">#Machine Learning</span> · <span class="hash">#Computer Vision</span> · <span class="hash">#HTML/CSS</span></p>
+        </div>
+        <div class="ach-box">
+          <div class="ach-title">🏆 Achievement</div>
+          <p><strong style="color:var(--text);">First Prize — Project Expo</strong> at AKT Memorial College of Engineering &amp; Technology (Mar 2025) — led the <em>Ocular Disease Identification</em> project at IGNITE EXPO '25 National Level Technical Symposium.</p>
+        </div>
+        <span class="sub-label">Technical Skills</span>
+        <div class="skills-row">
+          <span class="skill-pill">HTML</span><span class="skill-pill">CSS</span><span class="skill-pill">Python</span><span class="skill-pill">Java</span>
+          <span class="skill-pill">Computer Vision</span><span class="skill-pill">Image Processing</span>
+          <span class="skill-pill">Jupyter Notebook</span><span class="skill-pill">Data Analysis</span>
+        </div>
+        <span class="sub-label">Soft Skills</span>
+        <div class="skills-row">
+          <span class="skill-pill">Communication</span><span class="skill-pill">Active Listening</span><span class="skill-pill">Problem Solving</span>
+        </div>
+        <span class="sub-label">Productivity Tools</span>
+        <div class="skills-row">
+          <span class="skill-pill">MS PowerPoint</span><span class="skill-pill">MS Excel</span>
+        </div>
+        <span class="sub-label">Certifications</span>
+        <div class="skills-row">
+          <span class="skill-pill"><i class="fas fa-certificate" style="margin-right:4px;font-size:0.68rem;"></i> Oracle Certified Foundations Associate — Oracle University (2025)</span>
+          <span class="skill-pill"><i class="fas fa-certificate" style="margin-right:4px;font-size:0.68rem;"></i> Java Programming Certificate — Noviga Technologies (2025)</span>
+        </div>
+      </div>
+      <div>
+        <div class="about-img-card"><img src="assets/profile.jpg" alt="Dhanuprabu J"/></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="container">
+    <div class="section-center reveal"><div class="section-heading">Education</div><p>My academic journey from school to engineering college.</p></div>
+    <div class="edu-grid reveal">
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fas fa-school"></i></div>
+        <div class="edu-degree">10th Standard (SSLC)</div>
+        <div class="edu-school">Sri Ragavendra Matric Higher Secondary School, Veeraganur, Salem (Dt)</div>
+        <div class="edu-year">2019 – 2020</div>
+        <span class="edu-score">76.2%</span>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+        <div class="edu-degree">Higher Secondary (HSC)</div>
+        <div class="edu-school">Government Higher Secondary School, Veppanthattai, Perambalur (Dt) — Computer Science, Mathematics</div>
+        <div class="edu-year">2021 – 2022</div>
+        <span class="edu-score">73.16%</span>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-degree">B.Tech — Information Technology</div>
+        <div class="edu-school">Mahendra College of Engineering, Minnampalli, Salem (Dt)</div>
+        <div class="edu-year">2022 – Present</div>
+        <span class="edu-score">7.72 CGPA</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-center reveal">
+      <div class="section-heading">Featured Work</div>
+      <p>A showcase of 6 projects across AI, machine learning, cybersecurity, and web development.</p>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d0020,#1a0040);color:rgba(160,100,255,0.5);"><i class="fas fa-mirror" style="font-size:2.2rem;"></i><i class="fas fa-user-circle" style="font-size:1.5rem;margin-left:-0.5rem;color:rgba(224,53,106,0.5);"></i></div>
+        <div class="project-body">
+          <div class="project-title">AI Smart Mirror</div>
+          <p class="project-desc">AI-based smart mirror using computer vision for real-time facial detection. Displays personalised time, weather &amp; notifications with intelligent automation.</p>
+          <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Computer Vision</span><span class="tech-tag">AI/ML</span><span class="tech-tag">Facial Detection</span></div>
+          <div class="project-btns">
+            <button class="pbtn pbtn-gh"><i class="fab fa-github"></i> GitHub</button>
+            <button class="pbtn pbtn-demo" onclick="window.open('https://69d7f37aac1aa747d41757c2--brilliant-starlight-b9158c.netlify.app/','_blank')"><i class="fas fa-external-link-alt"></i> Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#001020,#003055);color:rgba(96,180,255,0.4);"><i class="fas fa-flask"></i></div>
+        <div class="project-body">
+          <div class="project-title">R&amp;D Search Portal</div>
+          <p class="project-desc">Web portal to manage and search research equipment and lab resources with advanced search, request features, and improved resource utilisation.</p>
+          <div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Java</span></div>
+          <div class="project-btns">
+            <button class="pbtn pbtn-gh"><i class="fab fa-github"></i> GitHub</button>
+            <button class="pbtn pbtn-demo" onclick="window.open('https://spiffy-centaur-87545f.netlify.app/','_blank')"><i class="fas fa-external-link-alt"></i> Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0a00,#3a1500);color:rgba(255,160,50,0.4);"><i class="fas fa-traffic-light"></i></div>
+        <div class="project-body">
+          <div class="project-title">Traffic Violation Detection</div>
+          <p class="project-desc">Automated system using image processing to detect traffic violations, capture vehicle details, generate alerts, and improve road safety.</p>
+          <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Image Processing</span><span class="tech-tag">Computer Vision</span></div>
+          <div class="project-btns">
+            <button class="pbtn pbtn-gh"><i class="fab fa-github"></i> GitHub</button>
+            <button class="pbtn pbtn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#001a10,#003520);color:rgba(0,229,160,0.4);"><i class="fas fa-shield-alt"></i></div>
+        <div class="project-body">
+          <div class="project-title">Email Phishing Detection</div>
+          <p class="project-desc">ML model detecting phishing emails by analysing content, links, and metadata for classification. Enhances cybersecurity and protects users from fraud.</p>
+          <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Machine Learning</span><span class="tech-tag">Cybersecurity</span><span class="tech-tag">NLP</span></div>
+          <div class="project-btns">
+            <button class="pbtn pbtn-gh"><i class="fab fa-github"></i> GitHub</button>
+            <button class="pbtn pbtn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#10001a,#250040);color:rgba(200,100,255,0.4);"><i class="fas fa-briefcase"></i></div>
+        <div class="project-body">
+          <div class="project-title">Smart Job Recommendation</div>
+          <p class="project-desc">Recommendation system suggesting jobs based on user skills and preferences using data analysis to match candidates with relevant opportunities.</p>
+          <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Data Analysis</span><span class="tech-tag">Recommendation</span></div>
+          <div class="project-btns">
+            <button class="pbtn pbtn-gh"><i class="fab fa-github"></i> GitHub</button>
+            <button class="pbtn pbtn-demo" onclick="window.open('https://v0-smart-job-recommendation-eight.vercel.app/','_blank')"><i class="fas fa-external-link-alt"></i> Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0010,#2d1060);color:rgba(224,53,106,0.4);"><i class="fas fa-home"></i></div>
+        <div class="project-body">
+          <div class="project-title">House Price Prediction</div>
+          <p class="project-desc">ML model predicting housing prices based on location, size, and features. Data visualisations for non-technical stakeholders using storytelling techniques.</p>
+          <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Jupyter Notebook</span><span class="tech-tag">Machine Learning</span></div>
+          <div class="project-btns">
+            <button class="pbtn pbtn-gh" onclick="window.open('https://github.com/dhanuprabu/House-price-predictor-7.git','_blank')"><i class="fab fa-github"></i> GitHub</button>
+            <button class="pbtn pbtn-demo"><i class="fas fa-external-link-alt"></i> Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-center reveal"><div class="section-heading">Services</div></div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-title" style="margin-bottom:0.8rem;">Web Development</div>
+        <p class="service-desc">Building responsive, modern websites using HTML, CSS, and JavaScript with clean code and best practices from concept to deployment.</p>
+        <div class="service-tags"><span class="service-tag">Responsive</span><span class="service-tag">Performance</span><span class="service-tag">SEO Friendly</span></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fab fa-java"></i></div>
+        <div class="service-title">Java Full Stack</div>
+        <p class="service-desc">End-to-end Java web applications using Spring Boot, REST APIs, and MySQL — backend logic to frontend integration and deployment.</p>
+        <div class="service-tags"><span class="service-tag">Spring Boot</span><span class="service-tag">REST API</span><span class="service-tag">MySQL</span><span class="service-tag">MVC</span></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-eye"></i></div>
+        <div class="service-title">Computer Vision &amp; AI</div>
+        <p class="service-desc">Developing AI-powered computer vision applications including facial detection, traffic monitoring, and ocular disease identification systems.</p>
+        <div class="service-tags"><span class="service-tag">OpenCV</span><span class="service-tag">Facial Detection</span><span class="service-tag">Image Processing</span></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-flask"></i></div>
+        <div class="service-title">R&amp;D Portal Dev</div>
+        <p class="service-desc">Creating integrated research and development equipment management systems for academic, laboratory, and institutional use cases.</p>
+        <div class="service-tags"><span class="service-tag">Portal Systems</span><span class="service-tag">Equipment Mgmt</span><span class="service-tag">Booking</span></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-title" style="margin-bottom:0.8rem;">UI/UX Design</div>
+        <p class="service-desc">Designing intuitive and beautiful user interfaces with a focus on usability, accessibility, and modern visual appeal.</p>
+        <div class="service-tags"><span class="service-tag">User-Centered</span><span class="service-tag">Modern Design</span><span class="service-tag">Accessibility</span></div>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+        <div class="service-title">API Development</div>
+        <p class="service-desc">Creating robust and scalable RESTful APIs that power full-stack applications, with proper documentation and testing.</p>
+        <div class="service-tags"><span class="service-tag">REST</span><span class="service-tag">Java</span><span class="service-tag">Documentation</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid reveal">
+      <div>
+        <div class="contact-title">Get In Touch</div>
+        <p class="contact-sub">Let's collaborate! I am always open to discussing exciting projects and new opportunities.</p>
+        <div class="contact-info">
+          <div class="contact-item"><i class="fas fa-envelope"></i> dhanuprabuj@gmail.com</div>
+          <div class="contact-item"><i class="fas fa-phone"></i> +91 9361032426</div>
+          <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Perambalur, Tamil Nadu</div>
+          <div class="contact-item"><i class="fab fa-linkedin"></i> linkedin.com/in/dhanuprabu-j-a182602a6</div>
+          <div class="contact-item"><i class="fab fa-github"></i> github.com/dhanuprabu</div>
+        </div>
+        <div class="contact-socials">
+          <a class="csocial" href="https://github.com/dhanuprabu" target="_blank"><i class="fab fa-github"></i></a>
+          <a class="csocial" href="https://www.linkedin.com/in/dhanuprabu-j-a182602a6" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a class="csocial" href="mailto:dhanuprabuj@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a class="csocial" href="tel:+919361032426"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <div class="cform">
+          <input type="text" placeholder="Your Name"/>
+          <input type="email" placeholder="Your Email"/>
+          <textarea placeholder="Your Message"></textarea>
+          <button type="button">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><p>© 2025 Dhanuprabu J. All rights reserved.</p></footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
